@@ -1,0 +1,30 @@
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+Manifest.toml
+
+# Output data (large files)
+*.csv
+!example_*.csv
+
+# Segmentation output folders
+m*_s*/
+baysor_*/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
