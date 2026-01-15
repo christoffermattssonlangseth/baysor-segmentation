@@ -7,6 +7,7 @@ Julia notebooks for running [Baysor](https://github.com/kharchenkolab/Baysor) ce
 - **Julia 1.10.x** (not compatible with Julia 1.11)
 - **Baysor** package
 - **IJulia** for Jupyter notebook support
+- **Python 3** + `scanpy`, `pandas`, `numpy` (for the h5ad export notebook)
 
 ### Installation
 
@@ -62,6 +63,20 @@ Batch processing notebook that:
 ### `baysor_analysis.ipynb`
 
 Starter notebook for running Baysor on individual files with documentation of key parameters.
+
+### `baysor_diagnostics.ipynb`
+
+Summarizes Baysor outputs, counts, and basic QC across output folders.
+
+### `running_baysor_slide_1.ipynb`
+
+Example single-run notebook with hardcoded paths and parameters.
+
+### `baysor_to_h5ad.ipynb`
+
+Python notebook that scans two root folders for Baysor outputs with `m50` + `s4` or `m50` + `scale4`,
+builds an expression matrix from `segmentation.csv`, attaches `segmentation_cell_stats.csv`, and writes
+one `.h5ad` per output to `/Volumes/processing2/output_spinal_cord_injury`.
 
 ## Input Data Format
 
